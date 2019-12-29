@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  polynote:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: --config /opt/config/config.yml
+    ports:
+      - "8192:8192"
+
+    
